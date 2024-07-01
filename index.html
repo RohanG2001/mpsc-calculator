@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Negative Marking Calculator</h1>
+        <form id="marksForm">
+            <label for="totalQuestions">Total Number of Questions:</label>
+            <input type="number" id="totalQuestions" required>
+            
+            <label for="correctMarks">Marks for Correct Answer:</label>
+            <input type="number" id="correctMarks" required>
+            
+            <label for="negativeMarks">Negative Marks for Wrong Answer:</label>
+            <input type="number" id="negativeMarks" required>
+            
+            <label for="attemptedQuestions">Number of Questions Attempted:</label>
+            <input type="number" id="attemptedQuestions" required>
+            
+            <label for="wrongAnswers">Number of Wrong Answers:</label>
+            <input type="number" id="wrongAnswers" required>
+            
+            <label for="unattendedQuestions">Number of Unattended Questions:</label>
+            <input type="number" id="unattendedQuestions" required>
+            
+            <div class="buttons">
+                <button type="button" onclick="calculateResult()">Calculate</button>
+                <button type="button" onclick="resetForm()">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
